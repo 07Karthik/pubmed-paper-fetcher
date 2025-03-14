@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fetch-research-papers"
+version = "0.1.0"
+description = "A CLI tool to fetch PubMed papers."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_fetcher.py"}]
+
+# ✅ Correct placement of requires-python
+[tool.poetry.dependencies]
+python = ">=3.11"
+requests = ">=2.32.3,<3.0.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
