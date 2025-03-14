@@ -25,7 +25,13 @@ git clone https://github.com/07Karthik/pubmed-paper-fetcher.git
 cd pubmed-paper-fetcher
 ```
 
+
 ### 2️⃣ Install dependencies
+
+#### Install Poetry (if not already installed)
+```sh
+pip install poetry
+```
 
 #### Using Poetry:
 
@@ -39,7 +45,7 @@ poetry install
 ### 🔍 Use the CLI tool for custom queries
 
 ```sh
-python pubmed_cli.py --query "cancer research"
+python pubmed_cli.py "cancer research" -f results.csv
 ```
 
 or using Poetry:
