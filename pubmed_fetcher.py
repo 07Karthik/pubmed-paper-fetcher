@@ -9,7 +9,7 @@ BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 COMPANY_KEYWORDS = {"pharma", "biotech", "therapeutics", "biosciences", "laboratories", "inc.", "ltd.", "gmbh"}
 EMAIL_REGEX = r'[\w\.-]+@[\w\.-]+\.\w+'
 
-def fetch_pubmed_papers(query: str, max_results: int = 20) -> List[Dict[str, str]]:
+def fetch_pubmed_papers(query: str, max_results: int = 100) -> List[Dict[str, str]]:
     """
     Fetch research papers from PubMed API based on a given query.
     """
