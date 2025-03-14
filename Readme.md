@@ -36,12 +36,6 @@ poetry install
 
 ## 🚀 Running the Program
 
-### 📜 Fetch research papers from PubMed
-
-```sh
-python pubmed_fetcher.py
-```
-
 ### 🔍 Use the CLI tool for custom queries
 
 ```sh
